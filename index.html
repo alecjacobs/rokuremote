@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://devtools.web.roku.com/RokuRemote/ -->
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<title>Roku Remote Tool</title>
+	<link href="http://devtools.web.roku.com/RokuRemote/images/favicon.ico" rel="icon"><!-- Latest compiled and minified Bootstrap CSS -->
+	<link href="./Roku Remote Tool_files/bootstrap.min.css" rel="stylesheet"><!-- Navigation CSS -->
+	<link href="./Roku Remote Tool_files/navigation.css" rel="stylesheet"><!-- Main CSS -->
+	<link href="./Roku Remote Tool_files/style.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="roku-page-content roku-page-custom-font" id="body">
+    <div class="spacer">Custom Roku Remote ;)</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10">
+					<div class="roku-remote-center">
+						<div class="row roku-remote-btn-space">
+							<button class="btn btn-roku round btn-lg pull-left roku-remote-home" id="Back" type="button"><span>⬅</span></button>
+              <button class="btn btn-roku round btn-lg pull-right roku-remote-home" id="Home" type="button"><span>🏠</span></button>
+						</div>
+						<div class="row text-center roku-remote-ok-space">
+							<div class="roku-remote-nav"></div>
+              <button class="btn btn-roku round btn-lg roku-remote-nav" id="Up" type="button"><span>⬆</span></button>
+							<div class="roku-remote-nav"></div>
+						</div>
+						<div class="roku-remote-btn-space">
+							<div class="row text-center roku-remote-ok-space">
+								<button class="btn btn-roku round btn-lg pull-left roku-remote-nav" id="Left" type="button"><span>⬅</span></button>
+                <button class="btn btn-roku round btn-lg roku-remote-nav" id="Select" type="button"><span>OK</span></button>
+                <button class="btn btn-roku round btn-lg pull-right roku-remote-nav" id="Right" type="button"><span>➡</span></button>
+							</div>
+							<div class="row text-center roku-remote-ok-space">
+								<div class="roku-remote-nav"></div><button class="btn btn-roku round btn-lg roku-remote-nav" id="Down" type="button"><span>⬇</span></button>
+								<div class="roku-remote-nav"></div>
+							</div>
+						</div>
+						<div class="row roku-remote-options-space">
+							<button class="btn btn-roku round btn-lg pull-left roku-remote-opt" id="InstantReplay" type="button"><span>🔄</span></button>
+              <button class="btn btn-roku round btn-lg pull-right roku-remote-opt" id="Info" type="button">✳️</span></button>
+						</div>
+						<div class="row text-center roku-remote-options-space">
+							<button class="btn btn-roku round btn-lg pull-left roku-remote-play" id="Rev" type="button"><span>⏪</span></button>
+              <button class="btn btn-roku round btn-lg roku-remote-play" id="Play" type="button"><span>⏯</span></button>
+              <button class="btn btn-roku round btn-lg pull-right roku-remote-play" id="Fwd" type="button"><span>⏩</span></button>
+						</div>
+					</div>
+
+          <div class="spacer"></div>
+
+          <div class="form-group input-group-lg has-success" id="rokuBoxIpAddressValidator">
+            <label class="control-label" for="rokuBoxIpAddress">Roku box IP-address</label>
+            <div class="input-group input-group-lg">
+              <input aria-describedby="rokuBoxIpAddressHelp" class="form-control" id="rokuBoxIpAddress" placeholder="127.0.0.1" type="text" value="192.168.0.7">
+              <ul class="dropdown-menu scrollable full-width" id="rokuBoxIpAddressList" style="display: none;">
+                <li class="IpAddressListView">
+                  <a class="IpAddressItem" href="javascript:void(0);">192.168.0.7</a><a href="javascript:void(0);"><span class="removeIpAddress glyphicon glyphicon-remove pull-right btn btn-danger btn-circle btn-xs" role="button" style="padding-top: 3px;"></span></a>
+                </li>
+              </ul><span class="input-group-btn input-group-btn-dropdown-static"><button class="btn btn-lg btn-success" data-original-title="Clear" data-placement="top" data-ref="tooltip" id="clearIpAddressInput" title=""><span class="input-group-btn input-group-btn-dropdown-static"><span class="glyphicon glyphicon glyphicon-trash"></span></span></button></span>
+            </div><span class="help-block hidden" id="rokuBoxIpAddressHelp">0-255.0-255.0-255.0-255</span>
+          </div>
+
+				</div><!-- /.col-lg-4 -->
+
+			</div><!-- /.row -->
+		</div><!-- /container -->
+	</div>
+
+	<script type="text/javascript">
+	       if (window.location.toString().indexOf('https://') === 0) {
+	           window.location = window.location.toString().replace('https://', 'http://');
+	       }
+	</script> <!-- Latest compiled and minified jQuery -->
+
+	<script charset="UTF-8" src="./Roku%20Remote%20Tool_files/jquery-2.2.4.min.js" type="text/javascript">
+	</script> <!-- Latest compiled and minified Bootstrap JavaScript -->
+
+	<script charset="UTF-8" src="./Roku%20Remote%20Tool_files/bootstrap.min.js" type="text/javascript">
+	</script> <!-- Latest compiled and minified FileSaver JavaScript -->
+
+	<script charset="UTF-8" src="./Roku%20Remote%20Tool_files/FileSaver.js" type="text/javascript">
+	</script> <!-- Main JavaScript -->
+
+	<script src="./Roku%20Remote%20Tool_files/RokuRemote.js">
+	</script>
+	<script src="./Roku%20Remote%20Tool_files/script.js">
+	</script> <!-- Navigation JavaScript -->
+
+	<script charset="UTF-8" src="./Roku%20Remote%20Tool_files/navigation.js" type="text/javascript">
+	</script>
+</body>
+</html>

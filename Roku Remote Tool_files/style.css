@@ -1,0 +1,195 @@
+.roku-page-content {
+  margin-top: 30px;
+}
+
+.roku-page-content .spacer {
+  height: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Fonts */
+.roku-page-custom-font {
+    font-family: GothamLight, Helvetica, Arial, sans-serif;
+    color: #7d7d7d;
+}
+
+/* Custom Buttons */
+
+.btn-roku {
+    color: #ffffff;
+    background-color: #205fb1;
+    border-color: #205fb1;
+    line-height: 2;
+}
+
+.btn-roku:hover, .btn-roku:focus, .btn-roku:active, .btn-roku.active, .open .dropdown-toggle.btn-roku {
+    color: #ffffff;
+    background-color: #09438f;
+    border-color: #130269;
+}
+.btn-roku:active, .btn-roku.active, .open .dropdown-toggle.btn-roku {
+    background-image: none;
+}
+
+.btn-pin-area {
+    position: relative;
+}
+.btn-pin-corner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    border-radius: 0 4px 0 4px;
+}
+.btn-roku .badge {
+    color: #205fb1;
+    background-color: #ffffff;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 2.5;
+  border-radius: 15px;
+}
+.btn-circle.btn-xs {
+  width: 22px;
+  height: 22px;
+  padding: 0px 0px;
+  font-size: 11px;
+  line-height: 2.5;
+  border-radius: 15px;
+}
+a.btn-circle.btn-xs {
+  width: 22px;
+  height: 22px;
+  padding: 3px 0px 0px 1px;
+  font-size: 11px;
+  line-height: 2.5;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 2.5;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 2.5;
+  border-radius: 35px;
+}
+
+.btn-circle-pad {
+  margin-left: 7px;
+}
+
+/* Ip-address box */
+.IpAddressListView {
+  width: 100%;
+  display: inline-flex;
+}
+
+.IpAddressItem {
+  width: 100%;
+}
+
+/* Roku Labels */
+.label-roku {
+    background-color: #205fb1;
+}
+
+.label-roku[href]:hover, .label-roku[href]:focus {
+    background-color: #09438f;
+}
+.label-gi-block {
+    margin: 0px 10px;
+    padding: 10px 10px 10px 30px;
+    display: inline-grid;
+}
+.label-txt-block {
+    margin: 0px 10px;
+    padding: 10px 22px;
+    display: inline-grid;
+}
+.span-text-readable-responsive {
+    line-height: 2em;
+}
+
+.label-display-block {
+    display: block;
+}
+
+/* DropDown Menus */
+
+#stream-dropdown-menu> button {
+    width: 100px;
+}
+
+
+/* Roku Remote Grid */
+
+.roku-remote-center {
+    margin: 4px 0px 17px 0px;
+}
+.roku-remote-btn-space {
+    margin: 0px 0px 30px 0px;
+}
+.roku-remote-options-space {
+    margin: 0px 0px 10px 0px;
+}
+.roku-remote-ok-space {
+    margin: 3px 0px;
+}
+.roku-remote-home {
+    width: 49%;
+}
+.roku-remote-nav {
+    width: 33%;
+}
+.roku-remote-opt {
+    width: 48%;
+}
+.roku-remote-play {
+    width: 32%;
+}
+
+/* Inputs */
+
+#rokuBoxKeyHistory, #rokuBoxKeyBot {
+    resize: vertical;
+}
+.btn-rnd-top-right {
+    border-radius: 0px 4px 0px 0px;
+}
+.btn-rnd-top-left {
+    border-radius: 4px 0px 0px 0px;
+}
+.input-in-dropdown {
+    padding: 0px 5px;
+}
+#rokuBoxKeyBot {
+    border-radius: 0px 0px 4px 4px;
+}
+#downloadExportFile {
+    display: none;
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 480px) {
+    .container-header {
+        display: none;
+    }
+    .roku-remote-center {
+        margin: 0px 0px;
+    }
+}

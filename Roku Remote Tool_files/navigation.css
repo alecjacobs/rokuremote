@@ -1,0 +1,698 @@
+@font-face {
+  font-family: GothamBook;
+  src: url("../fonts/Gotham-Book.eot");
+  src: url("../fonts/Gotham-Book.woff") format("woff"),
+       url("../fonts/Gotham-Book.ttf") format("truetype"),
+       url("../fonts/Gotham-Book.svg") format("svg");
+}
+@font-face {
+  font-family: GothamBold;
+  src: url("../fonts/Gotham-Bold.eot");
+  src: url("../fonts/Gotham-Bold.woff") format("woff"),
+       url("../fonts/Gotham-Bold.ttf") format("truetype"),
+       url("../fonts/Gotham-Bold.svg") format("svg");
+}
+@font-face {
+  font-family: GothamExtraLight;
+  src: url("../fonts/Gotham-ExtraLight.eot");
+  src: url("../fonts/Gotham-ExtraLight.woff") format("woff"),
+       url("../fonts/Gotham-ExtraLight.ttf") format("truetype"),
+       url("../fonts/Gotham-ExtraLight.svg") format("svg");
+}
+@font-face {
+    font-family: 'Glyphicons Roku';
+    src:url('../fonts/glyphicons-roku.eot?9m7lai');
+    src:url('../fonts/glyphicons-roku.eot?#iefix9m7lai') format('embedded-opentype'),
+        url('../fonts/glyphicons-roku.woff?9m7lai') format('woff'),
+        url('../fonts/glyphicons-roku.ttf?9m7lai') format('truetype'),
+        url('../fonts/glyphicons-roku.svg?9m7lai#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 767px) {
+	.hide-in-mobile {
+		display: none;
+	}
+}
+
+.roku-page-content,
+.roku-nav-content,
+.roku-footer-content {
+    max-width: 1200px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+#roku-header {
+	height: 70px;
+	position: relative;
+	top: 0px;
+	padding: 1rem 0rem 0rem 1rem;
+	background: #f8f8f8;
+	font-family: "GothamBold", Helvetica, Arial, sans-serif;
+	color: #662d91;
+	font-size: 18px;
+}
+#roku-header a {
+	text-decoration: none;
+	color: #662d91;
+}
+#roku-header.roku-header-close {
+	top: -300px;
+}
+#roku-header .roku-glyphicon:after,.roku-glyphicon:before {
+	position: relative;
+	top: 1px;
+	font-family: 'Glyphicons Roku';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+#roku-header .roku-glyphicon-chevron-up:before {
+	content: "\e619";
+}
+#roku-header .roku-glyphicon-chevron-up.roku-glyphicon-cheveron-down:before {
+	content: "\e618";
+}
+#roku-header #roku-product-arrow, #roku-support-arrow, #roku-user-arrow {
+	padding-left: 1rem;
+}
+#roku-header .roku-logo {
+	width: 10%;
+	float: left;
+}
+#roku-header .roku-feature-links-container {
+	text-align: center;
+}
+@media (min-width: 1199px) {
+	#roku-header .roku-feature-links-container {
+		padding-left: 6rem;
+	}
+}
+
+#roku-header .roku-feature-links {
+	width: 90%;
+	float: left;
+	padding-top: 1rem;
+}
+#roku-header .roku-feature-links .roku-feature-link-section {
+	float: left;
+	/*padding-right: 2rem;
+	padding-left: 2rem;*/
+	width: 15%;
+}
+#roku-header #support-feature-link.roku-feature-link-selected,
+ #roku-header #product-feature-link.roku-feature-link-selected {
+	position: relative;
+	background: #eee;
+	height: 45px;
+	top: -40px;
+	padding-top: 40px;
+}
+
+#roku-header .roku-feature-links .roku-feature-link-section a {
+	color: #662d91;
+	cursor: pointer;
+}
+#roku-header .roku-feature-link-section .roku-glyphicon-chevron {
+	content: "\e601";
+	font-family: 'Glyphicons Roku';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	cursor: pointer;
+}
+#header .roku-user.roku-user-menu-style {
+	background: #662d91;
+	padding: 2.5rem 0.5rem 0;
+	color: #fff;
+	height: 85px;
+	top: -15px;
+}
+@media (min-width: 1199px) {
+	#roku-header {
+		height: 70px;
+	}
+	#roku-header .roku-header-toggle,
+	.roku-header-mobile-menu {
+		display: none;
+	}
+}
+
+@media (max-width: 1199px) {
+	#roku-header .hide-in-mobile {
+		display: none;
+	}
+	#roku-header .roku-logo {
+		height: 50px;
+	}
+	#roku-header .roku-logo img {
+		margin-top: 0px;
+		width: 66px;
+		padding: 16px 0px;
+	}
+	.roku-header-mobile-menu {
+		position: absolute;
+		width: 100%;
+		top: 70px;
+		left: -5000px;
+		font-family: "GothamBold", Helvetica, Arial, sans-serif;
+		color: #662d91;
+		background: #eee;
+		padding-left: 0.9rem;
+		z-index: 9999;
+	}
+	.roku-header-mobile-menu  a {
+		text-decoration: none;
+		color: #662d91;
+	}
+	.roku-header-mobile-menu-item {
+		padding: 1.5rem 0;
+		margin-right: 1.5rem;
+		border-bottom: solid 1px;
+		border-bottom-color: #fff;
+	}
+	#roku-header .roku-header-toggle{
+		display: block;
+		width: 44px;
+    	height: 35px;
+    	float: right;
+    	position: relative;
+    	top: 20px;
+    	right: 10px;
+    	font-size: 24px;
+	}
+	#roku-header .roku-header-toggle.roku-header-toggle-open {
+		text-align: center;
+		background: #eee;
+		top: -20px;
+		height: 80px;
+		padding-top: 30px;
+		width: 80px;
+		right: 0px;
+		font-size: 24px;
+	}
+	#roku-header .roku-header-toggle-bar {
+		display: block;
+	    width: 22px;
+	    height: 2px;
+	    border-radius: 1px;
+	    margin: 4px auto;
+	    background-color: #662d91;
+	}
+}
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+	#roku-header {
+		font-size: 14px;
+	}
+	#roku-header .roku-feature-links .roku-feature-link-section {
+		padding-left: 3rem;
+		padding-right: 0rem;
+	}
+	#roku-header .roku-logo {
+		padding-top: 0.5rem;
+	}
+	#roku-header .roku-user {
+		top: 10px;
+	}
+}
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	#roku-header .roku-feature-links .roku-feature-link-section {
+		padding-left: 3rem;
+		padding-right: 2rem;
+	}
+}
+.hidden-xs {
+	display: none;
+}
+
+#roku-footer {
+	box-sizing: border-box;
+}
+
+#roku-footer a:hover {
+	opacity: .5;
+}
+#roku-footer .footer-section-legal a:hover {
+	opacity: 1;
+}
+
+#roku-footer .roku-footer-content {
+	padding: 0;
+	max-width: 1200px;
+}
+
+#roku-footer .footer-section-social {
+    text-align: center;
+    color: #fff;
+    background-color: #662d91;
+    padding: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    font-family: "GothamLight", "GothamBook", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+}
+
+#roku-footer .footer-section-social a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#roku-footer .footer-section-social .blog, #roku-footer .footer-section-social .social {
+	text-align: center;
+    line-height: 50px;
+}
+
+#roku-footer .footer-section-social .blog {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 20px;
+}
+
+#roku-footer .footer-section-social .social {
+	padding-top: 20px;
+}
+
+#roku-footer .social-icon {
+	display: inline-block;
+    margin: 0 10px;
+    color: #662d91;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+#roku-footer .social-icon:first-child {
+	margin-left: 0;
+}
+#roku-footer .social-icon span {
+    font-size: 24px;
+    line-height: 52px;
+    display: inline-block;
+    color: #662d91;
+}
+
+#roku-footer .footer-section-legal {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f3f3f3;
+    font-weight: normal;
+    line-height: 1.42;
+    font-family: "GothamBook", Helvetica, Arial, sans-serif;
+    color: #333;
+	font-size: 12px;
+}
+
+#roku-footer .copyright {
+	margin-bottom: 20px;
+}
+#roku-footer .copyright span {
+	display: inline;
+}
+
+#roku-footer .legal-links a, #roku-footer .legal-links a:visited {
+	color: #333;
+    text-decoration: none;
+}
+#roku-footer .legal-links a:after {
+	content: ' | ';
+}
+#roku-footer .legal-links a:last-child:after {
+	content: '';
+}
+#roku-footer .legal-links span {
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.hidden-xs {
+		display: inline-block;
+	}
+
+	#roku-footer .footer-section-social .blog {
+		vertical-align: top;
+		display: inline-block;
+		border: 0;
+		padding: 0;
+		text-align: left;
+		width: 50%;
+	}
+	#roku-footer .footer-section-social .social {
+		vertical-align: top;
+		display: inline-block;
+		padding: 0;
+		text-align: right;
+		width: 50%;
+	}
+
+	#roku-footer .footer-section-legal {
+		padding: 40px 30px;
+	}
+
+	#roku-footer .logo {
+		vertical-align: top;
+		display: inline-block;
+		width: 30%;
+		text-align: left;
+	}
+
+	#roku-footer .legal-text {
+		vertical-align: top;
+		display: inline-block;
+		width: 70%;
+		text-align: right;
+	}
+}
+
+.roku-glyphicon:after,.roku-glyphicon:before {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Roku';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.roku-glyphicon-bullet:before {
+	font-family: sans-serif;
+	content: "\2022";
+}
+.roku-glyphicon-new-blog:before {
+	content: "\e900";
+}
+.roku-glyphicon-roku:before {
+	content: "\e600";
+}
+.roku-glyphicon-smallcheck:before {
+	content: "\e601";
+}
+.roku-glyphicon-check:before {
+	content: "\e602";
+}
+.roku-glyphicon-no-risk:before {
+	content: "\e603";
+}
+.roku-glyphicon-free-shipping:before {
+	content: "\e604";
+}
+.roku-glyphicon-close:before {
+	content: "\e605";
+}
+.roku-glyphicon-play:before {
+	content: "\e606";
+}
+.roku-glyphicon-roku-blog:before {
+	content: "\e607";
+}
+.roku-glyphicon-youtube:before {
+	content: "\e608";
+}
+.roku-glyphicon-bbb:before {
+	content: "\e609";
+}
+.roku-glyphicon-home:before {
+	content: "\e60a";
+}
+.roku-glyphicon-headphones:before {
+	content: "\e60b";
+}
+.roku-glyphicon-connection:before {
+	content: "\e60c";
+}
+.roku-glyphicon-location:before {
+	content: "\e60d";
+}
+.roku-glyphicon-location2:before {
+	content: "\e60e";
+}
+.roku-glyphicon-mobile:before {
+	content: "\e60f";
+}
+.roku-glyphicon-tablet:before {
+	content: "\e610";
+}
+.roku-glyphicon-tv:before {
+	content: "\e611";
+}
+.roku-glyphicon-heart:before {
+	content: "\e612";
+}
+.roku-glyphicon-chat:before {
+	content: "\e613";
+}
+.roku-glyphicon-comment:before {
+	content: "\e614";
+}
+.roku-glyphicon-camera:before {
+	content: "\e615";
+}
+.roku-glyphicon-checkmark:before {
+	content: "\e616";
+}
+.roku-glyphicon-arrow-left-sm:before,.roku-glyphicon-chevron-left-sm:before {
+	content: "\e617";
+}
+.roku-glyphicon-arrow-down-sm:before,.roku-glyphicon-chevron-down-sm:before {
+	content: "\e618";
+}
+.roku-glyphicon-arrow-up-sm:before,.roku-glyphicon-chevron-up-sm:before {
+	content: "\e619";
+}
+.roku-glyphicon-arrow-right-sm:before,.roku-glyphicon-chevron-right-sm:before {
+	content: "\e61a";
+}
+.roku-glyphicon-arrow-left:before,.roku-glyphicon-chevron-left:before {
+	content: "\e61b";
+}
+.roku-glyphicon-arrow-down:before,.roku-glyphicon-chevron-down:before {
+	content: "\e61c";
+}
+.roku-glyphicon-arrow-up:before,.roku-glyphicon-chevron-up:before {
+	content: "\e61d";
+}
+.roku-glyphicon-arrow-right:before,.roku-glyphicon-chevron-right:before {
+	content: "\e61e";
+}
+.roku-glyphicon-vimeo:before {
+	content: "\e61f";
+}
+.roku-glyphicon-twitter:before {
+	content: "\e620";
+}
+.roku-glyphicon-facebook:before {
+	content: "\e621";
+}
+.roku-glyphicon-googleplus:before {
+	content: "\e622";
+}
+.roku-glyphicon-pinterest:before {
+	content: "\e623";
+}
+.roku-glyphicon-star:before {
+	content: "\e006";
+}
+.roku-glyphicon-shopping-cart:before {
+	content: "\e116";
+	padding-top: 5px;
+	top: -4px;
+}
+.roku-glyphicon-rss:before {
+	content: "\e624";
+}
+.roku-glyphicon-instagram:before {
+	content: "\e625";
+}
+.roku-glyphicon-linkedin:before {
+	content: "\e626";
+}
+.roku-glyphicon-rss-email:before {
+	content: "\e627";
+}
+.roku-glyphicon-one-year:before {
+	content: "\e628";
+}
+.roku-glyphicon-roku-after:after {
+	content: "\e600";
+}
+.roku-glyphicon-smallcheck-after:after {
+	content: "\e601";
+}
+.roku-glyphicon-check-after:after {
+	content: "\e602";
+}
+.roku-glyphicon-no-risk-after:after {
+	content: "\e603";
+}
+.roku-glyphicon-free-shipping-after:after {
+	content: "\e604";
+}
+.roku-glyphicon-close-after:after {
+	content: "\e605";
+}
+.roku-glyphicon-play-after:after {
+	content: "\e606";
+}
+.roku-glyphicon-roku-blog-after:after {
+	content: "\e607";
+}
+.roku-glyphicon-youtube-after:after {
+	content: "\e608";
+}
+.roku-glyphicon-bbb-after:after {
+	content: "\e609";
+}
+.roku-glyphicon-home-after:after {
+	content: "\e60a";
+}
+.roku-glyphicon-headphones-after:after {
+	content: "\e60b";
+}
+.roku-glyphicon-connection-after:after {
+	content: "\e60c";
+}
+.roku-glyphicon-location-after:after {
+	content: "\e60d";
+}
+.roku-glyphicon-location2-after:after {
+	content: "\e60e";
+}
+.roku-glyphicon-mobile-after:after {
+	content: "\e60f";
+}
+.roku-glyphicon-tablet-after:after {
+	content: "\e610";
+}
+.roku-glyphicon-tv-after:after {
+	content: "\e611";
+}
+.roku-glyphicon-heart-after:after {
+	content: "\e612";
+}
+.roku-glyphicon-chat-after:after {
+	content: "\e613";
+}
+.roku-glyphicon-comment-after:after {
+	content: "\e614";
+}
+.roku-glyphicon-camera-after:after {
+	content: "\e615";
+}
+.roku-glyphicon-checkmark-after:after {
+	content: "\e616";
+}
+.roku-glyphicon-arrow-left-sm-after:after,.roku-glyphicon-chevron-left-sm-after:after {
+	content: "\e617";
+}
+.roku-glyphicon-arrow-down-sm-after:after,.roku-glyphicon-chevron-down-sm-after:after {
+	content: "\e618";
+}
+.roku-glyphicon-arrow-up-sm-after:after,.roku-glyphicon-chevron-up-sm-after:after {
+	content: "\e619";
+}
+.roku-glyphicon-arrow-right-sm-after:after,.roku-glyphicon-chevron-right-sm-after:after {
+	content: "\e61a";
+}
+.roku-glyphicon-arrow-left-after:after,.roku-glyphicon-chevron-left-after:after {
+	content: "\e61b";
+}
+.roku-glyphicon-arrow-down-after:after,.roku-glyphicon-chevron-down-after:after {
+	content: "\e61c";
+}
+.roku-glyphicon-arrow-up-after:after,.roku-glyphicon-chevron-up-after:after {
+	content: "\e61d";
+}
+.roku-glyphicon-arrow-right-after:after,.roku-glyphicon-chevron-right-after:after {
+	content: "\e61e";
+}
+.roku-glyphicon-vimeo-after:after {
+	content: "\e61f";
+}
+.roku-glyphicon-twitter-after:after {
+	content: "\e620";
+}
+.roku-glyphicon-facebook-after:after {
+	content: "\e621";
+}
+.roku-glyphicon-googleplus-after:after {
+	content: "\e622";
+}
+.roku-glyphicon-pinterest-after:after {
+	content: "\e623";
+}
+.roku-glyphicon-star-after:after {
+	content: "\e006";
+}
+.roku-glyphicon-shopping-cart-after:after {
+	content: "\e116";
+}
+.roku-glyphicon-rss-after:after {
+	content: "\e624";
+}
+.roku-glyphicon-instagram-after:after {
+	content: "\e625";
+}
+.roku-glyphicon-linkedin-after:after {
+	content: "\e626";
+}
+.roku-glyphicon-rss-email-after:after {
+	content: "\e627";
+}
+.roku-glyphicon-trash-can:before,.roku-glyphicon-trash-can-after:after {
+	content: "\e90a";
+}
+.roku-glyphicon-preview:before,.roku-glyphicon-preview-after:after {
+	content: "\e90b";
+}
+.roku-glyphicon-success:before,.roku-glyphicon-success-after:after {
+	content: "\e90c";
+}
+.roku-glyphicon-close2:before,.roku-glyphicon-close2-after:after {
+	content: "\e90d";
+}
+.roku-glyphicon-delete:before,.roku-glyphicon-delete-after:after {
+	content: "\e90e";
+}
+.roku-glyphicon-edit:before,.roku-glyphicon-edit-after:after {
+	content: "\e90f";
+}
+.roku-glyphicon-collapse:before,.roku-glyphicon-collapse-after:after {
+	content: "\e900";
+}
+.roku-glyphicon-expand:before,.roku-glyphicon-expand-after:after {
+	content: "\e901";
+}
+.roku-glyphicon-error:before,.roku-glyphicon-error-after:after {
+	content: "\e902";
+}
+.roku-glyphicon-warn:before,.roku-glyphicon-warn-after:after {
+	content: "\e903";
+}
+.roku-glyphicon-success-small:before,.roku-glyphicon-success-small-after:after {
+	content: "\e906";
+}
+.roku-glyphicon-reorder:before,.roku-glyphicon-reorder-after:after {
+	content: "\e910";
+}
+.roku-glyphicon-search:before,.roku-glyphicon-search-after:after {
+	content: "\e911";
+}
+.roku-glyphicon-cog:before,.roku-glyphicon-cog-after:after {
+	content: "\e904";
+}
