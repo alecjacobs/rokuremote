@@ -1,2 +1,2 @@
-# roku_5000
+# rokuremote
 a slick roku remote
